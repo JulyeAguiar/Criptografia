@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia Simples</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <label for="textoEntrada">Texto:</label>
+        <input type="text" id="textoEntrada" placeholder="Digite o texto">
+
+        <label for="chaveEntrada">Chave de Criptografia:</label>
+        <input  id="chaveEntrada" placeholder="Digite a chave de criptografia">
+
+        <button onclick="criptografarTexto()">Criptografar</button>
+        <button onclick="descriptografarTexto()">Descriptografar</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
